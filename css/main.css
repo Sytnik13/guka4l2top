@@ -183,13 +183,15 @@ body .content .gold-servers .gold-server:hover .gold-server-des .name-server {
 }
 body .content .filters {
   text-align: center;
-  padding: 10px 0 0;
+  position: relative;
 }
 body .content .filters .btn {
+  width: 100%;
   text-align: center;
-  background: #F37021;
+  background: #09031a;
   color: #fff;
   border: none;
+  border-radius: 0;
   outline: 0;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -199,7 +201,8 @@ body .content .filters .btn {
   box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
 }
 body .content .filters .btn:hover {
-  box-shadow: 0px 17px 10px -10px #F37021;
+  transform: translate(0px, -5px);
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
 }
 body .content .filters .btn:active {
   outline: 0;
@@ -218,7 +221,7 @@ body .content .filters .filter-server-hide {
 body .content .filters .filter-server {
   display: none;
   text-align: center;
-  padding: 0 15px;
+  padding: 20px 15px;
 }
 body .content .filters .filter-server h2 {
   text-align: left;
@@ -365,7 +368,6 @@ body footer p {
   text-align: center;
 }
 body footer .lower-footer {
-  background: #10062a;
   color: #ffffff;
   font-size: 12px;
   line-height: 50px;
