@@ -255,7 +255,6 @@ body .content .none-servers .already-opened .none-server-item,
 body .content .none-servers .today .none-server-item,
 body .content .none-servers .tomorrow .none-server-item {
   margin: 10px 0 0;
-  border-bottom: 1px solid grey;
 }
 body .content .none-servers .will-open .none-server-item a,
 body .content .none-servers .already-opened .none-server-item a,
