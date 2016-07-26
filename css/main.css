@@ -1,0 +1,400 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body .row {
+  margin: 0;
+}
+body .nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+body .nav-container .btn {
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background: #09031a;
+  outline: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+body .nav-container .btn .humb {
+  display: inline-block;
+  width: 20px;
+  margin: 0 0 -1px -4px;
+}
+body .nav-container .btn .humb .humb1,
+body .nav-container .btn .humb .humb2,
+body .nav-container .btn .humb .humb3 {
+  height: 3px;
+  background: #F37021;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+body .nav-container .btn .humb .humb1,
+body .nav-container .btn .humb .humb2 {
+  margin-bottom: 4px;
+}
+body .nav-container .btn:active {
+  outline: 0;
+}
+body .nav-container .btn-active {
+  background: #10062a;
+}
+body .nav-container .btn-active .humb .humb1 {
+  moz-transform: rotate(405deg) translateX(9px) translatey(6px);
+  -webkit-transform: rotate(405deg) translateX(9px) translatey(6px);
+  -o-transform: rotate(405deg) translateX(9px) translatey(6px);
+  -ms-transform: rotate(405deg) translateX(9px) translatey(6px);
+  transform: rotate(405deg) translateX(6px) translatey(5px);
+  width: 20px;
+}
+body .nav-container .btn-active .humb .humb2 {
+  -moz-transform: rotate(405deg) translateX(4px) translatey(-3px);
+  -webkit-transform: rotate(405deg) translateX(4px) translatey(-3px);
+  -o-transform: rotate(405deg) translateX(4px) translatey(-3px);
+  -ms-transform: rotate(405deg) translateX(4px) translatey(-3px);
+  transform: rotate(405deg) translateX(4px) translatey(-3px);
+  opacity: 0;
+}
+body .nav-container .btn-active .humb .humb3 {
+  -moz-transform: rotate(495deg) translateX(-11px) translatey(8px);
+  -webkit-transform: rotate(495deg) translateX(-11px) translatey(8px);
+  -o-transform: rotate(495deg) translateX(-11px) translatey(8px);
+  -ms-transform: rotate(495deg) translateX(-11px) translatey(8px);
+  transform: rotate(495deg) translateX(-5px) translatey(4px);
+  width: 20px;
+}
+body .nav-container .nav-tabs {
+  border: none;
+  background: #F37021;
+}
+body .nav-container .nav-tabs li {
+  position: relative;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  transition: all ease-out 0.2s;
+}
+body .nav-container .nav-tabs li a {
+  visibility: hidden;
+  position: relative;
+  padding: 0;
+  line-height: 4;
+  color: #fff;
+  border: none;
+}
+body .nav-container .nav-tabs li a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+body .nav-container .nav-tabs .nav-it-show {
+  height: 57px;
+}
+body .nav-container .nav-tabs .nav-it-show a {
+  visibility: visible;
+}
+body .content {
+  padding: 43px 0 43px;
+  box-shadow: 0px 0px 9px 0px #000000;
+}
+body .content .gold-servers {
+  padding: 0 10px 20px;
+  background-image: url("http://i67.tinypic.com/f08boy.jpg");
+  background-position: top;
+}
+body .content .gold-servers h1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .content .gold-servers p {
+  margin: 20px 0 0;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .content .gold-servers .gold-server {
+  position: relative;
+  width: 45%;
+  display: inline-block;
+  margin: 20px 0 0;
+  text-decoration: none;
+  background: #F37021;
+  border-radius: 3px;
+  transition: all .2s linear;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+}
+body .content .gold-servers .gold-server img {
+  float: left;
+  padding: 5px;
+  width: 45px;
+  height: 45px;
+}
+body .content .gold-servers .gold-server .gold-server-des {
+  display: inline-block;
+}
+body .content .gold-servers .gold-server .gold-server-des span {
+  color: #fff;
+}
+body .content .gold-servers .gold-server .gold-server-des .name-server {
+  display: block;
+  color: #fff;
+}
+body .content .gold-servers .gold-server .gold-server-des .rates,
+body .content .gold-servers .gold-server .gold-server-des .server-mod {
+  font-size: 10px;
+}
+body .content .gold-servers .gold-server .server-data {
+  position: absolute;
+  bottom: 4px;
+  right: 6px;
+  padding: 0 2px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+body .content .gold-servers .gold-server .server-data .data {
+  color: #F37021;
+  font-size: 10px;
+}
+body .content .gold-servers .gold-server .server-country {
+  width: 16px;
+  height: 11px;
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  padding: 0;
+  border: none;
+}
+body .content .gold-servers .gold-server .server-country img {
+  width: 16px;
+  height: 11px;
+}
+body .content .gold-servers .gold-server:hover {
+  transform: translate(0px, -5px);
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+}
+body .content .gold-servers .gold-server:hover .gold-server-des .name-server {
+  text-decoration: underline;
+}
+body .content .filters {
+  text-align: center;
+  padding: 10px 0 0;
+}
+body .content .filters .btn {
+  text-align: center;
+  background: #F37021;
+  color: #fff;
+  border: none;
+  outline: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+}
+body .content .filters .btn:hover {
+  box-shadow: 0px 17px 10px -10px #F37021;
+}
+body .content .filters .btn:active {
+  outline: 0;
+}
+body .content .filters input option:hover,
+body .content .filters select option:hover {
+  background: #F37021;
+}
+body .content .filters input:focus,
+body .content .filters select:focus {
+  border-color: #F37021;
+}
+body .content .filters .filter-server-hide {
+  display: block !important;
+}
+body .content .filters .filter-server {
+  display: none;
+  text-align: center;
+  padding: 0 15px;
+}
+body .content .filters .filter-server h2 {
+  text-align: left;
+  margin: 0 0 0 -10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .content .filters .filter-server p {
+  text-align: left;
+  margin: 20px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .content .filters .filter-server .filter-banner {
+  margin: 20px 0 0;
+  text-align: center;
+}
+body .content .filters .filter-server .filter-banner img {
+  width: 100%;
+}
+body .content .none-servers .will-open p,
+body .content .none-servers .already-opened p,
+body .content .none-servers .today p,
+body .content .none-servers .tomorrow p {
+  margin: 5px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .content .none-servers .will-open .none-server-item,
+body .content .none-servers .already-opened .none-server-item,
+body .content .none-servers .today .none-server-item,
+body .content .none-servers .tomorrow .none-server-item {
+  margin: 10px 0 0;
+  border-bottom: 1px solid grey;
+}
+body .content .none-servers .will-open .none-server-item a,
+body .content .none-servers .already-opened .none-server-item a,
+body .content .none-servers .today .none-server-item a,
+body .content .none-servers .tomorrow .none-server-item a {
+  display: inline-block;
+  width: 165px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: grey;
+}
+body .content .none-servers .will-open .none-server-item span,
+body .content .none-servers .already-opened .none-server-item span,
+body .content .none-servers .today .none-server-item span,
+body .content .none-servers .tomorrow .none-server-item span {
+  font-size: 12px;
+}
+body .content .none-servers .will-open .none-server-item .rates,
+body .content .none-servers .already-opened .none-server-item .rates,
+body .content .none-servers .today .none-server-item .rates,
+body .content .none-servers .tomorrow .none-server-item .rates {
+  display: inline-block;
+  width: 45px;
+}
+body .content .none-servers .will-open .none-server-item .server-mod,
+body .content .none-servers .already-opened .none-server-item .server-mod,
+body .content .none-servers .today .none-server-item .server-mod,
+body .content .none-servers .tomorrow .none-server-item .server-mod {
+  display: inline-block;
+  width: 60px;
+}
+body .content .none-servers .will-open .none-server-item .data,
+body .content .none-servers .already-opened .none-server-item .data,
+body .content .none-servers .today .none-server-item .data,
+body .content .none-servers .tomorrow .none-server-item .data {
+  display: inline-block;
+  width: 90px;
+}
+body .content .none-servers .will-open .none-server-item .country,
+body .content .none-servers .already-opened .none-server-item .country,
+body .content .none-servers .today .none-server-item .country,
+body .content .none-servers .tomorrow .none-server-item .country {
+  display: inline-block;
+  width: 5px;
+}
+body .content .none-servers .will-open .none-server-item .vip,
+body .content .none-servers .already-opened .none-server-item .vip,
+body .content .none-servers .today .none-server-item .vip,
+body .content .none-servers .tomorrow .none-server-item .vip {
+  color: #F37021;
+}
+body .content .none-servers .will-open .none-server-item .vip::before,
+body .content .none-servers .already-opened .none-server-item .vip::before,
+body .content .none-servers .today .none-server-item .vip::before,
+body .content .none-servers .tomorrow .none-server-item .vip::before {
+  padding: 2px;
+  content: 'vip';
+  background-color: #F37021;
+  color: #fff;
+}
+body .content .none-servers .will-open .none-server-item .middle-vip,
+body .content .none-servers .already-opened .none-server-item .middle-vip,
+body .content .none-servers .today .none-server-item .middle-vip,
+body .content .none-servers .tomorrow .none-server-item .middle-vip {
+  color: #2d72d9;
+}
+body .content .none-servers .will-open .none-server-item .middle-vip::before,
+body .content .none-servers .already-opened .none-server-item .middle-vip::before,
+body .content .none-servers .today .none-server-item .middle-vip::before,
+body .content .none-servers .tomorrow .none-server-item .middle-vip::before {
+  padding: 2px;
+  content: 'vip';
+  background-color: #2d72d9;
+  color: #fff;
+}
+body .content .none-servers .will-open .none-server-item .none-server-item-description,
+body .content .none-servers .already-opened .none-server-item .none-server-item-description,
+body .content .none-servers .today .none-server-item .none-server-item-description,
+body .content .none-servers .tomorrow .none-server-item .none-server-item-description,
+body .content .none-servers .will-open .none-server-item .none-server-item-description-data,
+body .content .none-servers .already-opened .none-server-item .none-server-item-description-data,
+body .content .none-servers .today .none-server-item .none-server-item-description-data,
+body .content .none-servers .tomorrow .none-server-item .none-server-item-description-data {
+  float: right;
+  width: 33,3%;
+}
+body .content .none-servers .will-open .none-server-item .none-server-item-description span,
+body .content .none-servers .already-opened .none-server-item .none-server-item-description span,
+body .content .none-servers .today .none-server-item .none-server-item-description span,
+body .content .none-servers .tomorrow .none-server-item .none-server-item-description span,
+body .content .none-servers .will-open .none-server-item .none-server-item-description-data span,
+body .content .none-servers .already-opened .none-server-item .none-server-item-description-data span,
+body .content .none-servers .today .none-server-item .none-server-item-description-data span,
+body .content .none-servers .tomorrow .none-server-item .none-server-item-description-data span {
+  font-size: 12px;
+}
+body footer {
+  background: #09031a;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+body footer .container .row div a {
+  color: #ffffff;
+}
+body footer p {
+  text-align: center;
+}
+body footer .lower-footer {
+  background: #10062a;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 50px;
+}
+@media screen and (max-width: 750px) {
+  body .content .content-servers .servers .server-list .server-list-item .item-description {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #toggle-menu {
+    display: block !important;
+  }
+  body .content .filters .filter-server {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .content .gold-servers .gold-server {
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  body .content {
+    padding: 23px 0 43px;
+  }
+  body .content .filters .filter-server .filter-banner img {
+    width: 200px;
+  }
+}
