@@ -7,51 +7,25 @@ body .row {
 body .nav-container {
   position: fixed;
   width: 100%;
-  background: #09031a;
   z-index: 999;
 }
-body .nav-container .navigation {
-  position: relative;
-}
-body .nav-container .navigation .logo {
-  position: absolute;
-  top: 6px;
-  left: 20px;
-  font-size: 22px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #F37021;
-}
-body .nav-container .navigation .logo span {
-  color: #fff;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-body .nav-container .navigation .logo:hover span {
-  color: #F37021;
-}
-body .nav-container .navigation .btn {
+body .nav-container .btn {
   border: none;
   border-radius: 0;
-  float: right;
   margin: 0;
   background: #09031a;
   outline: 0;
   font-size: 22px;
   font-weight: bold;
 }
-body .nav-container .navigation .btn .humb {
+body .nav-container .btn .humb {
   display: inline-block;
   width: 20px;
   margin: 0 0 -1px -4px;
 }
-body .nav-container .navigation .btn .humb .humb1,
-body .nav-container .navigation .btn .humb .humb2,
-body .nav-container .navigation .btn .humb .humb3 {
+body .nav-container .btn .humb .humb1,
+body .nav-container .btn .humb .humb2,
+body .nav-container .btn .humb .humb3 {
   height: 3px;
   background: #F37021;
   -webkit-transition: all 0.5s ease;
@@ -60,17 +34,17 @@ body .nav-container .navigation .btn .humb .humb3 {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-body .nav-container .navigation .btn .humb .humb1,
-body .nav-container .navigation .btn .humb .humb2 {
+body .nav-container .btn .humb .humb1,
+body .nav-container .btn .humb .humb2 {
   margin-bottom: 4px;
 }
-body .nav-container .navigation .btn:active {
+body .nav-container .btn:active {
   outline: 0;
 }
-body .nav-container .navigation .btn-active {
+body .nav-container .btn-active {
   background: #10062a;
 }
-body .nav-container .navigation .btn-active .humb .humb1 {
+body .nav-container .btn-active .humb .humb1 {
   moz-transform: rotate(405deg) translateX(9px) translatey(6px);
   -webkit-transform: rotate(405deg) translateX(9px) translatey(6px);
   -o-transform: rotate(405deg) translateX(9px) translatey(6px);
@@ -78,7 +52,7 @@ body .nav-container .navigation .btn-active .humb .humb1 {
   transform: rotate(405deg) translateX(6px) translatey(5px);
   width: 20px;
 }
-body .nav-container .navigation .btn-active .humb .humb2 {
+body .nav-container .btn-active .humb .humb2 {
   -moz-transform: rotate(405deg) translateX(4px) translatey(-3px);
   -webkit-transform: rotate(405deg) translateX(4px) translatey(-3px);
   -o-transform: rotate(405deg) translateX(4px) translatey(-3px);
@@ -86,7 +60,7 @@ body .nav-container .navigation .btn-active .humb .humb2 {
   transform: rotate(405deg) translateX(4px) translatey(-3px);
   opacity: 0;
 }
-body .nav-container .navigation .btn-active .humb .humb3 {
+body .nav-container .btn-active .humb .humb3 {
   -moz-transform: rotate(495deg) translateX(-11px) translatey(8px);
   -webkit-transform: rotate(495deg) translateX(-11px) translatey(8px);
   -o-transform: rotate(495deg) translateX(-11px) translatey(8px);
@@ -208,7 +182,6 @@ body .content .gold-servers .gold-server:hover .gold-server-des .name-server {
   text-decoration: underline;
 }
 body .content .filters {
-  padding: 10px 0 0;
   text-align: center;
   position: relative;
 }
@@ -248,7 +221,7 @@ body .content .filters .filter-server-hide {
 body .content .filters .filter-server {
   display: none;
   text-align: center;
-  padding: 8px 15px;
+  padding: 20px 15px;
 }
 body .content .filters .filter-server h2 {
   text-align: left;
@@ -327,15 +300,8 @@ body .content .none-servers .will-open .none-server-item .country,
 body .content .none-servers .already-opened .none-server-item .country,
 body .content .none-servers .today .none-server-item .country,
 body .content .none-servers .tomorrow .none-server-item .country {
-  width: 16px;
-  height: 11px;
-}
-body .content .none-servers .will-open .none-server-item .country img,
-body .content .none-servers .already-opened .none-server-item .country img,
-body .content .none-servers .today .none-server-item .country img,
-body .content .none-servers .tomorrow .none-server-item .country img {
-  width: 16px;
-  height: 11px;
+  display: inline-block;
+  width: 5px;
 }
 body .content .none-servers .will-open .none-server-item .vip,
 body .content .none-servers .already-opened .none-server-item .vip,
@@ -412,11 +378,11 @@ body footer .lower-footer {
   }
 }
 @media screen and (min-width: 992px) {
+  #toggle-menu {
+    display: block !important;
+  }
   body .content .filters .filter-server {
     display: block;
-  }
-  body .content .filters {
-    padding: 0;
   }
 }
 @media screen and (max-width: 500px) {

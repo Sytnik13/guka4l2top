@@ -6,37 +6,10 @@ body {
     .nav-container {
       position: fixed;
       width: 100%;
-      background: rgb(9, 3, 26);
       z-index: 999;
-      .navigation {
-        position: relative;
-        .logo {
-          position: absolute;
-          top: 6px;
-          left: 20px;
-          font-size: 22px;
-          font-weight: bold;
-          text-transform: uppercase;
-          text-decoration: none;
-          color: #F37021;
-          span {
-            color: #fff;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -ms-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-          }
-          &:hover {
-            span {
-              color: #F37021;
-            }
-          }
-        }
         .btn {
             border: none;
             border-radius: 0;
-            float: right;
             margin: 0;
             background: rgb(9, 3, 26);
             outline: 0;
@@ -93,8 +66,6 @@ body {
             }
           }
         }
-      }
-
         .nav-tabs {
           border: none;
           background: #F37021;
@@ -214,7 +185,6 @@ body {
         }
       }
       .filters {
-        padding: 10px 0 0;
         text-align: center;
         position: relative;
         .btn {
@@ -262,7 +232,7 @@ body {
         .filter-server {
           display: none;
           text-align: center;
-          padding: 8px 15px;
+          padding: 20px 15px;
           h2 {
             text-align: left;
             margin: 0 0 0 -10px;
@@ -327,12 +297,8 @@ body {
             }
 
             .country {
-              width: 16px;
-              height: 11px;
-              img {
-                  width: 16px;
-                  height: 11px;
-              }
+              display: inline-block;
+              width: 5px;
             }
 
             .vip {
@@ -396,11 +362,11 @@ body {
     }
 }
 @media screen and (min-width: 992px) {
+  #toggle-menu {
+    display: block !important;
+  }
   body .content .filters .filter-server {
     display: block;
-  }
-  body .content .filters {
-    padding: 0;
   }
 }
 @media screen and (max-width: 500px) {
