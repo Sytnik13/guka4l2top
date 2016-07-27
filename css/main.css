@@ -291,7 +291,7 @@ body .content .none-servers .already-opened .none-server-item a,
 body .content .none-servers .today .none-server-item a,
 body .content .none-servers .tomorrow .none-server-item a {
   display: inline-block;
-  width: 165px;
+  width: 168px;
   font-size: 13px;
   text-transform: uppercase;
   color: grey;
@@ -334,6 +334,7 @@ body .content .none-servers .will-open .none-server-item .country img,
 body .content .none-servers .already-opened .none-server-item .country img,
 body .content .none-servers .today .none-server-item .country img,
 body .content .none-servers .tomorrow .none-server-item .country img {
+  display: inline-block;
   width: 16px;
   height: 11px;
 }
@@ -348,6 +349,7 @@ body .content .none-servers .already-opened .none-server-item .vip::before,
 body .content .none-servers .today .none-server-item .vip::before,
 body .content .none-servers .tomorrow .none-server-item .vip::before {
   padding: 2px;
+  margin: 0 2px 0 0;
   content: 'vip';
   background-color: #F37021;
   color: #fff;
@@ -363,6 +365,7 @@ body .content .none-servers .already-opened .none-server-item .middle-vip::befor
 body .content .none-servers .today .none-server-item .middle-vip::before,
 body .content .none-servers .tomorrow .none-server-item .middle-vip::before {
   padding: 2px;
+  margin: 0 2px 0 0;
   content: 'vip';
   background-color: #2d72d9;
   color: #fff;
