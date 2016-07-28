@@ -7,25 +7,51 @@ body .row {
 body .nav-container {
   position: fixed;
   width: 100%;
+  background: #09031a;
   z-index: 999;
 }
-body .nav-container .btn {
+body .nav-container .navigation {
+  position: relative;
+}
+body .nav-container .navigation .logo {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F37021;
+}
+body .nav-container .navigation .logo span {
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+body .nav-container .navigation .logo:hover span {
+  color: #F37021;
+}
+body .nav-container .navigation .btn {
   border: none;
   border-radius: 0;
+  float: right;
   margin: 0;
   background: #09031a;
   outline: 0;
   font-size: 22px;
   font-weight: bold;
 }
-body .nav-container .btn .humb {
+body .nav-container .navigation .btn .humb {
   display: inline-block;
   width: 20px;
   margin: 0 0 -1px -4px;
 }
-body .nav-container .btn .humb .humb1,
-body .nav-container .btn .humb .humb2,
-body .nav-container .btn .humb .humb3 {
+body .nav-container .navigation .btn .humb .humb1,
+body .nav-container .navigation .btn .humb .humb2,
+body .nav-container .navigation .btn .humb .humb3 {
   height: 3px;
   background: #F37021;
   -webkit-transition: all 0.5s ease;
@@ -34,17 +60,17 @@ body .nav-container .btn .humb .humb3 {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-body .nav-container .btn .humb .humb1,
-body .nav-container .btn .humb .humb2 {
+body .nav-container .navigation .btn .humb .humb1,
+body .nav-container .navigation .btn .humb .humb2 {
   margin-bottom: 4px;
 }
-body .nav-container .btn:active {
+body .nav-container .navigation .btn:active {
   outline: 0;
 }
-body .nav-container .btn-active {
+body .nav-container .navigation .btn-active {
   background: #10062a;
 }
-body .nav-container .btn-active .humb .humb1 {
+body .nav-container .navigation .btn-active .humb .humb1 {
   moz-transform: rotate(405deg) translateX(9px) translatey(6px);
   -webkit-transform: rotate(405deg) translateX(9px) translatey(6px);
   -o-transform: rotate(405deg) translateX(9px) translatey(6px);
@@ -52,7 +78,7 @@ body .nav-container .btn-active .humb .humb1 {
   transform: rotate(405deg) translateX(6px) translatey(5px);
   width: 20px;
 }
-body .nav-container .btn-active .humb .humb2 {
+body .nav-container .navigation .btn-active .humb .humb2 {
   -moz-transform: rotate(405deg) translateX(4px) translatey(-3px);
   -webkit-transform: rotate(405deg) translateX(4px) translatey(-3px);
   -o-transform: rotate(405deg) translateX(4px) translatey(-3px);
@@ -60,7 +86,7 @@ body .nav-container .btn-active .humb .humb2 {
   transform: rotate(405deg) translateX(4px) translatey(-3px);
   opacity: 0;
 }
-body .nav-container .btn-active .humb .humb3 {
+body .nav-container .navigation .btn-active .humb .humb3 {
   -moz-transform: rotate(495deg) translateX(-11px) translatey(8px);
   -webkit-transform: rotate(495deg) translateX(-11px) translatey(8px);
   -o-transform: rotate(495deg) translateX(-11px) translatey(8px);
@@ -96,11 +122,53 @@ body .nav-container .nav-tabs .nav-it-show {
 body .nav-container .nav-tabs .nav-it-show a {
   visibility: visible;
 }
+body .addserver {
+  padding: 43px 0;
+  box-shadow: 0 0 9px 0 #000000;
+}
+body .addserver h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .addserver .form {
+  padding: 40px 10px;
+}
+body .addserver .form .g-recaptcha {
+  width: 290px;
+}
+body .addserver .form .input-layout p {
+  color: #F37021;
+}
+body .addserver .form .input-layout .alert-version,
+body .addserver .form .input-layout .alert-country {
+  visibility: hidden;
+}
+body .addserver .form .btn {
+  margin: 10px 0 0;
+  width: 100%;
+  text-align: center;
+  background: #09031a;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+}
+body .addserver-description h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body .addserver-description p {
+  padding: 40px 10px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
 body footer {
   background: #09031a;
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
-  padding: 40px 0 0 0;
+  padding: 40px 0 0;
   text-align: center;
 }
 body footer .container .row div a {

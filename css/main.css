@@ -123,8 +123,8 @@ body .nav-container .nav-tabs .nav-it-show a {
   visibility: visible;
 }
 body .content {
-  padding: 43px 0 43px;
-  box-shadow: 0px 0px 9px 0px #000000;
+  padding: 43px 0;
+  box-shadow: 0 0 9px 0 #000000;
 }
 body .content .gold-servers {
   padding: 0 10px 20px;
@@ -152,8 +152,8 @@ body .content .gold-servers .gold-server {
   text-decoration: none;
   background: #F37021;
   border-radius: 3px;
-  transition: all .2s linear;
-  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s linear;
+  box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
 }
 body .content .gold-servers .gold-server img {
   float: left;
@@ -202,7 +202,7 @@ body .content .gold-servers .gold-server .server-country img {
 }
 body .content .gold-servers .gold-server:hover {
   transform: translate(0px, -5px);
-  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 0.2);
 }
 body .content .gold-servers .gold-server:hover .gold-server-des .name-server {
   text-decoration: underline;
@@ -225,11 +225,11 @@ body .content .filters .btn {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
 }
 body .content .filters .btn:hover {
   transform: translate(0px, -5px);
-  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 0.2);
 }
 body .content .filters .btn:active {
   outline: 0;
@@ -271,131 +271,136 @@ body .content .filters .filter-server .filter-banner {
 body .content .filters .filter-server .filter-banner img {
   width: 100%;
 }
-body .content .none-servers .will-open p,
 body .content .none-servers .already-opened p,
 body .content .none-servers .today p,
-body .content .none-servers .tomorrow p {
+body .content .none-servers .tomorrow p,
+body .content .none-servers .will-open p {
   margin: 5px 0 0;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
-body .content .none-servers .will-open .none-server-item,
 body .content .none-servers .already-opened .none-server-item,
 body .content .none-servers .today .none-server-item,
-body .content .none-servers .tomorrow .none-server-item {
+body .content .none-servers .tomorrow .none-server-item,
+body .content .none-servers .will-open .none-server-item {
   margin: 10px 0 0;
 }
-body .content .none-servers .will-open .none-server-item a,
 body .content .none-servers .already-opened .none-server-item a,
 body .content .none-servers .today .none-server-item a,
-body .content .none-servers .tomorrow .none-server-item a {
+body .content .none-servers .tomorrow .none-server-item a,
+body .content .none-servers .will-open .none-server-item a {
   display: inline-block;
   width: 168px;
   font-size: 13px;
   text-transform: uppercase;
-  color: grey;
 }
-body .content .none-servers .will-open .none-server-item span,
 body .content .none-servers .already-opened .none-server-item span,
 body .content .none-servers .today .none-server-item span,
-body .content .none-servers .tomorrow .none-server-item span {
+body .content .none-servers .tomorrow .none-server-item span,
+body .content .none-servers .will-open .none-server-item span {
   font-size: 12px;
 }
-body .content .none-servers .will-open .none-server-item .rates,
 body .content .none-servers .already-opened .none-server-item .rates,
 body .content .none-servers .today .none-server-item .rates,
-body .content .none-servers .tomorrow .none-server-item .rates {
+body .content .none-servers .tomorrow .none-server-item .rates,
+body .content .none-servers .will-open .none-server-item .rates {
   display: inline-block;
   width: 45px;
 }
-body .content .none-servers .will-open .none-server-item .server-mod,
 body .content .none-servers .already-opened .none-server-item .server-mod,
 body .content .none-servers .today .none-server-item .server-mod,
-body .content .none-servers .tomorrow .none-server-item .server-mod {
+body .content .none-servers .tomorrow .none-server-item .server-mod,
+body .content .none-servers .will-open .none-server-item .server-mod {
   display: inline-block;
   width: 60px;
 }
-body .content .none-servers .will-open .none-server-item .data,
 body .content .none-servers .already-opened .none-server-item .data,
 body .content .none-servers .today .none-server-item .data,
-body .content .none-servers .tomorrow .none-server-item .data {
+body .content .none-servers .tomorrow .none-server-item .data,
+body .content .none-servers .will-open .none-server-item .data {
   display: inline-block;
   width: 90px;
 }
-body .content .none-servers .will-open .none-server-item .country,
 body .content .none-servers .already-opened .none-server-item .country,
 body .content .none-servers .today .none-server-item .country,
-body .content .none-servers .tomorrow .none-server-item .country {
+body .content .none-servers .tomorrow .none-server-item .country,
+body .content .none-servers .will-open .none-server-item .country {
   width: 16px;
   height: 11px;
 }
-body .content .none-servers .will-open .none-server-item .country img,
 body .content .none-servers .already-opened .none-server-item .country img,
 body .content .none-servers .today .none-server-item .country img,
-body .content .none-servers .tomorrow .none-server-item .country img {
+body .content .none-servers .tomorrow .none-server-item .country img,
+body .content .none-servers .will-open .none-server-item .country img {
   display: inline-block;
   width: 16px;
   height: 11px;
 }
-body .content .none-servers .will-open .none-server-item .vip,
-body .content .none-servers .already-opened .none-server-item .vip,
-body .content .none-servers .today .none-server-item .vip,
-body .content .none-servers .tomorrow .none-server-item .vip {
+body .content .none-servers .already-opened .none-server-item .gold-vip,
+body .content .none-servers .today .none-server-item .gold-vip,
+body .content .none-servers .tomorrow .none-server-item .gold-vip,
+body .content .none-servers .will-open .none-server-item .gold-vip {
   color: #F37021;
 }
-body .content .none-servers .will-open .none-server-item .vip::before,
-body .content .none-servers .already-opened .none-server-item .vip::before,
-body .content .none-servers .today .none-server-item .vip::before,
-body .content .none-servers .tomorrow .none-server-item .vip::before {
+body .content .none-servers .already-opened .none-server-item .gold-vip::before,
+body .content .none-servers .today .none-server-item .gold-vip::before,
+body .content .none-servers .tomorrow .none-server-item .gold-vip::before,
+body .content .none-servers .will-open .none-server-item .gold-vip::before {
   padding: 2px;
   margin: 0 2px 0 0;
   content: 'vip';
   background-color: #F37021;
   color: #fff;
 }
-body .content .none-servers .will-open .none-server-item .middle-vip,
-body .content .none-servers .already-opened .none-server-item .middle-vip,
-body .content .none-servers .today .none-server-item .middle-vip,
-body .content .none-servers .tomorrow .none-server-item .middle-vip {
+body .content .none-servers .already-opened .none-server-item .silver-vip,
+body .content .none-servers .today .none-server-item .silver-vip,
+body .content .none-servers .tomorrow .none-server-item .silver-vip,
+body .content .none-servers .will-open .none-server-item .silver-vip {
   color: #2d72d9;
 }
-body .content .none-servers .will-open .none-server-item .middle-vip::before,
-body .content .none-servers .already-opened .none-server-item .middle-vip::before,
-body .content .none-servers .today .none-server-item .middle-vip::before,
-body .content .none-servers .tomorrow .none-server-item .middle-vip::before {
+body .content .none-servers .already-opened .none-server-item .silver-vip::before,
+body .content .none-servers .today .none-server-item .silver-vip::before,
+body .content .none-servers .tomorrow .none-server-item .silver-vip::before,
+body .content .none-servers .will-open .none-server-item .silver-vip::before {
   padding: 2px;
   margin: 0 2px 0 0;
   content: 'vip';
   background-color: #2d72d9;
   color: #fff;
 }
-body .content .none-servers .will-open .none-server-item .none-server-item-description,
+body .content .none-servers .already-opened .none-server-item .common-vip,
+body .content .none-servers .today .none-server-item .common-vip,
+body .content .none-servers .tomorrow .none-server-item .common-vip,
+body .content .none-servers .will-open .none-server-item .common-vip {
+  color: grey;
+}
 body .content .none-servers .already-opened .none-server-item .none-server-item-description,
 body .content .none-servers .today .none-server-item .none-server-item-description,
 body .content .none-servers .tomorrow .none-server-item .none-server-item-description,
-body .content .none-servers .will-open .none-server-item .none-server-item-description-data,
+body .content .none-servers .will-open .none-server-item .none-server-item-description,
 body .content .none-servers .already-opened .none-server-item .none-server-item-description-data,
 body .content .none-servers .today .none-server-item .none-server-item-description-data,
-body .content .none-servers .tomorrow .none-server-item .none-server-item-description-data {
+body .content .none-servers .tomorrow .none-server-item .none-server-item-description-data,
+body .content .none-servers .will-open .none-server-item .none-server-item-description-data {
   float: right;
   width: 33,3%;
 }
-body .content .none-servers .will-open .none-server-item .none-server-item-description span,
 body .content .none-servers .already-opened .none-server-item .none-server-item-description span,
 body .content .none-servers .today .none-server-item .none-server-item-description span,
 body .content .none-servers .tomorrow .none-server-item .none-server-item-description span,
-body .content .none-servers .will-open .none-server-item .none-server-item-description-data span,
+body .content .none-servers .will-open .none-server-item .none-server-item-description span,
 body .content .none-servers .already-opened .none-server-item .none-server-item-description-data span,
 body .content .none-servers .today .none-server-item .none-server-item-description-data span,
-body .content .none-servers .tomorrow .none-server-item .none-server-item-description-data span {
+body .content .none-servers .tomorrow .none-server-item .none-server-item-description-data span,
+body .content .none-servers .will-open .none-server-item .none-server-item-description-data span {
   font-size: 12px;
 }
 body footer {
   background: #09031a;
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
-  padding: 40px 0 0 0;
+  padding: 40px 0 0;
   text-align: center;
 }
 body footer .container .row div a {
