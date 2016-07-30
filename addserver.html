@@ -29,12 +29,17 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="nav-container">
-        <div class="navigation container">
+    <div class="banner">
+        <a href="#">
+            <i style="background: url('http://l2oops.com/top-banners/d4751bca63db216893e79be195ddca20.jpg') transparent no-repeat scroll 49% 0px;"></i>
+        </a>
+    </div>
+    <nav class="nav-container container">
+        <div class="navigation">
             <a class="logo" href="index.html">
                 <span>L2</span>TAB.com
             </a>
-            <button id="toggle-menu" class="btn btn-primary">
+            <button id="toggle-menu" class="btn btn-primary hidden-md hidden-lg">
                 M
                 <div class="humb">
                     <div class="humb1"></div>
@@ -45,7 +50,7 @@
         </div>
         <ul class="nav nav-tabs">
             <li class="nav-it">
-                <a href="index.html">Добавить сервер</a>
+                <a href="addserver.html">Добавить сервер</a>
             </li>
             <li class="nav-it">
                 <a href="about.html">Реклама</a>
@@ -90,7 +95,7 @@ Der Standardteil von Lorem Ipsum, genutzt seit 1500, ist reproduziert für die, 
                     </div>
                     <div class="input-layout">
                         <label for="rates">Рейты*</label>
-                        <input id="rates" class="form-control" type="number" name="rates">
+                        <input id="rates" class="form-control" name="rates" onkeypress="return isNumberKey(event)">
                         <p id="alert-rates">Введите рейты.</p>
                     </div>
                     <div class="input-layout">
@@ -372,7 +377,7 @@ Der Standardteil von Lorem Ipsum, genutzt seit 1500, ist reproduziert für die, 
                         <p id="alert-skype">Введите Skype или ICQ.</p>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6LejMyYTAAAAAFIoJj3ueNxGeDYGEzioH4qVtfVu"></div>
-                    <button class="btn" type="button" name="submit" disabled>Отправить</button>
+                    <button id="submit" class="btn" type="button" name="submit" disabled>Отправить</button>
                 </div>
                 <!--End form block-->
             </div>

@@ -3,16 +3,36 @@ body {
         margin: 0;
     }
     font-family: 'Roboto', sans-serif;
+    .banner {
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      cursor: pointer;
+      display: block;
+      top: 0px;
+      padding: 0;
+      a {
+        i {
+          width: 100%;
+          height: 565px;
+          display: block;
+        }
+      }
+    }
     .nav-container {
-        position: fixed;
-        width: 100%;
+        //position: fixed;
+        //width: 100%;
+        margin-top: 200px;
+        padding: 0;
         background: rgb(9, 3, 26);
-        z-index: 999;
+        box-shadow: 0 0 9px 0 #000000;
+        z-index: 2;
         .navigation {
+
             position: relative;
             .logo {
                 position: absolute;
-                top: 6px;
+                top: 7px;
                 left: 20px;
                 font-size: 22px;
                 font-weight: bold;
@@ -98,7 +118,7 @@ body {
         }
         .nav-tabs {
             border: none;
-            background: #F37021;
+            z-index: -1;
             li {
                 position: relative;
                 width: 100%;
@@ -106,14 +126,18 @@ body {
                 text-align: center;
                 transition: all ease-out 0.2s;
                 a {
+
                     visibility: hidden;
                     position: relative;
                     padding: 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
                     line-height: 4;
                     color: #fff;
                     border: none;
+                    border-radius: 0;
                     &:hover {
-                        background: rgba(0,0,0,.2);
+                        background: #F37021;
                     }
                 }
             }
@@ -126,8 +150,9 @@ body {
         }
     }
     .content {
-        padding: 43px 0;
+        padding: 0;
         box-shadow: 0 0 9px 0 #000000;
+        background: #fff;
         .gold-servers {
             padding: 0 10px 20px;
             background-image: url("http://i67.tinypic.com/f08boy.jpg");
@@ -342,7 +367,7 @@ body {
                             color: #fff;
                         }
                     }
-                    .common-vip {
+                    .takoi-vip {
                       color: grey;
                     }
                     .none-server-item-description,
@@ -394,6 +419,20 @@ body {
     body .content .filters {
         padding: 0;
     }
+    body .nav-container .navigation .logo {
+      top: 13px;
+    }
+    body .nav-container .nav-tabs {
+      float: right;
+      li {
+        width: auto;
+        height: 57px;
+        a {
+          visibility: visible;
+          padding: 0 10px;
+        }
+      }
+    }
 }
 @media screen and (max-width: 500px) {
     body .content .gold-servers .gold-server {
@@ -403,7 +442,10 @@ body {
 }
 @media screen and (max-width: 992px) {
     body .content {
-        padding: 23px 0 43px;
+        padding: 0 0 43px;
+        h1 {
+          margin-top: 0;
+        }
     }
     body .content .filters .filter-server .filter-banner img {
         width: 200px;

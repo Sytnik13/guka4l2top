@@ -4,18 +4,34 @@ body {
 body .row {
   margin: 0;
 }
-body .nav-container {
-  position: fixed;
+body .banner {
+  position: absolute;
   width: 100%;
+  z-index: -1;
+  cursor: pointer;
+  display: block;
+  top: 0px;
+  padding: 0;
+}
+body .banner a i {
+  background: url('http://l2oops.com/top-banners/d4751bca63db216893e79be195ddca20.jpg') transparent no-repeat scroll 49% 0px;
+  width: 100%;
+  height: 565px;
+  display: block;
+}
+body .nav-container {
+  margin-top: 200px;
+  padding: 0;
   background: #09031a;
-  z-index: 999;
+  box-shadow: 0 0 9px 0 #000000;
+  z-index: 2;
 }
 body .nav-container .navigation {
   position: relative;
 }
 body .nav-container .navigation .logo {
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: 20px;
   font-size: 22px;
   font-weight: bold;
@@ -96,7 +112,7 @@ body .nav-container .navigation .btn-active .humb .humb3 {
 }
 body .nav-container .nav-tabs {
   border: none;
-  background: #F37021;
+  z-index: -1;
 }
 body .nav-container .nav-tabs li {
   position: relative;
@@ -109,12 +125,15 @@ body .nav-container .nav-tabs li a {
   visibility: hidden;
   position: relative;
   padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
   line-height: 4;
   color: #fff;
   border: none;
+  border-radius: 0;
 }
 body .nav-container .nav-tabs li a:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: #F37021;
 }
 body .nav-container .nav-tabs .nav-it-show {
   height: 57px;
@@ -123,6 +142,7 @@ body .nav-container .nav-tabs .nav-it-show a {
   visibility: visible;
 }
 body .addserver {
+  background: #fff;
   padding: 43px 0;
   box-shadow: 0 0 9px 0 #000000;
 }
@@ -188,11 +208,26 @@ body footer .lower-footer {
   }
 }
 @media screen and (min-width: 992px) {
-  #toggle-menu {
-    display: block !important;
-  }
   body .content .filters .filter-server {
     display: block;
+  }
+  body .content .filters {
+    padding: 0;
+  }
+  body .nav-container .navigation .logo {
+    top: 13px;
+  }
+  body .nav-container .nav-tabs {
+    float: right;
+  }
+  body .nav-container .nav-tabs li {
+    width: auto;
+    height: 57px;
+  }
+  body .nav-container .nav-tabs li a {
+    visibility: visible;
+    padding: 0 10px;
+    line-height: 4;
   }
 }
 @media screen and (max-width: 500px) {
