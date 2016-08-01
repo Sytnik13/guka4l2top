@@ -1,4 +1,5 @@
 body {
+  background: #000;
   font-family: 'Roboto', sans-serif;
 }
 body .row {
@@ -130,6 +131,7 @@ body .nav-container .nav-tabs li a {
   color: #fff;
   border: none;
   border-radius: 0;
+  transition: all ease-out 0.2s;
 }
 body .nav-container .nav-tabs li a:hover {
   background: #F37021;
@@ -165,7 +167,7 @@ body .content .gold-servers p {
 }
 body .content .gold-servers .gold-server {
   position: relative;
-  width: 45%;
+  width: 100%;
   display: inline-block;
   margin: 20px 0 0;
   text-decoration: none;

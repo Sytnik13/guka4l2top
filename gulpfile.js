@@ -3,7 +3,11 @@ var gulp = require('gulp'),
     less = require('gulp-less');
 
 gulp.task('default', function () {
-    gulp.src('less/main.less')
+    gulp.src('less/addserver.less')
+        .pipe(less())
+        .pipe(gulp.dest('./css'))
+        .pipe(cleanCss())
+    gulp.src('less/admin.less')
         .pipe(less())
         .pipe(gulp.dest('./css'))
         .pipe(cleanCss())
@@ -11,5 +15,6 @@ gulp.task('default', function () {
 });
 
 gulp.task('watch',function () {
-    gulp.watch('less/main.less', ['default'])
+    gulp.watch('less/addserver.less', ['default']);
+    gulp.watch('less/admin.less', ['default'])
 });

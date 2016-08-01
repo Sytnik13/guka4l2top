@@ -142,48 +142,8 @@ body .nav-container .nav-tabs .nav-it-show {
 body .nav-container .nav-tabs .nav-it-show a {
   visibility: visible;
 }
-body .addserver {
+body section {
   background: #fff;
-  padding: 43px 0;
-  box-shadow: 0 0 9px 0 #000000;
-}
-body .addserver h1 {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-body .addserver .form {
-  padding: 40px 10px;
-}
-body .addserver .form .g-recaptcha {
-  width: 290px;
-}
-body .addserver .form .input-layout p {
-  color: #F37021;
-}
-body .addserver .form .input-layout .alert-country,
-body .addserver .form .input-layout .alert-version {
-  visibility: hidden;
-}
-body .addserver .form .btn {
-  margin: 10px 0 0;
-  width: 100%;
-  text-align: center;
-  background: #09031a;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  outline: 0;
-}
-body .addserver-description h2 {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-body .addserver-description p {
-  padding: 40px 10px;
-  margin-bottom: 5px;
-  font-weight: 700;
 }
 body footer {
   background: #09031a;
