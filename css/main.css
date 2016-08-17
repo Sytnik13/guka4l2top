@@ -83,9 +83,6 @@ body .nav-container .navigation .btn .humb .humb2 {
 body .nav-container .navigation .btn:active {
   outline: 0;
 }
-body .nav-container .navigation .btn-active {
-  background: #10062a;
-}
 body .nav-container .navigation .btn-active .humb .humb1 {
   moz-transform: rotate(405deg) translateX(9px) translatey(6px);
   -webkit-transform: rotate(405deg) translateX(9px) translatey(6px);
@@ -143,18 +140,18 @@ body .nav-container .nav-tabs .nav-it-show a {
   visibility: visible;
 }
 body .content {
-  padding: 0;
+  padding: 0 0 20px;
   box-shadow: 0 0 9px 0 #000000;
   background: #fff;
 }
 body .content .gold-servers {
   padding: 0 10px 20px;
-  background-image: url("http://i67.tinypic.com/f08boy.jpg");
   background-position: top;
 }
 body .content .gold-servers h1 {
+  margin: 7px 0 0;
   font-size: 20px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -229,6 +226,7 @@ body .content .gold-servers .gold-server:hover .gold-server-des .name-server {
   text-decoration: underline;
 }
 body .content .filters {
+  float: right;
   padding: 10px 0 0;
   text-align: center;
   position: relative;
@@ -477,5 +475,8 @@ body footer .lower-footer {
   }
   body .content .filters .filter-server .filter-banner img {
     width: 200px;
+  }
+  body .content .filters {
+    float: none;
   }
 }

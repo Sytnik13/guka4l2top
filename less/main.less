@@ -88,7 +88,6 @@ body {
                 }
             }
             .btn-active {
-                background: rgb(16, 6, 42);
                 .humb {
                     .humb1 {
                         moz-transform: rotate(405deg) translateX(9px) translatey(6px);
@@ -152,16 +151,16 @@ body {
         }
     }
     .content {
-        padding: 0;
+        padding: 0 0 20px;
         box-shadow: 0 0 9px 0 #000000;
         background: #fff;
         .gold-servers {
             padding: 0 10px 20px;
-            background-image: url("http://i67.tinypic.com/f08boy.jpg");
             background-position: top;
             h1 {
+                margin: 7px 0 0;
                 font-size: 20px;
-                color: #fff;
+                color: #000;
                 font-weight: bold;
                 text-transform: uppercase;
             }
@@ -240,6 +239,7 @@ body {
             }
         }
         .filters {
+            float: right;
             padding: 10px 0 0;
             text-align: center;
             position: relative;
@@ -451,5 +451,8 @@ body {
     }
     body .content .filters .filter-server .filter-banner img {
         width: 200px;
+    }
+    body .content .filters {
+        float: none;
     }
 }

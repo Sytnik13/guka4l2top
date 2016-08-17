@@ -11,10 +11,15 @@ gulp.task('default', function () {
         .pipe(less())
         .pipe(gulp.dest('./css'))
         .pipe(cleanCss())
+    gulp.src('less/main.less')
+        .pipe(less())
+        .pipe(gulp.dest('./css'))
+        .pipe(cleanCss())
 
 });
 
 gulp.task('watch',function () {
     gulp.watch('less/addserver.less', ['default']);
-    gulp.watch('less/admin.less', ['default'])
+    gulp.watch('less/admin.less', ['default']);
+    gulp.watch('less/main.less', ['default'])
 });
