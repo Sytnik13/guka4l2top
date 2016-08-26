@@ -140,60 +140,194 @@ body .nav-container .nav-tabs .nav-it-show {
 body .nav-container .nav-tabs .nav-it-show a {
   visibility: visible;
 }
-body .addserver {
-  background: #fff;
-  padding: 0;
+body .adv {
+  padding: 0 0 20px;
   box-shadow: 0 0 9px 0 #000000;
+  background: #fff;
 }
-body .addserver h1 {
+body .adv .right-side .info-layout:nth-child(1) {
+  margin: 0 0 20px;
+}
+body .adv .info-layout:nth-child(1) {
+  margin: 0 0 20px;
+}
+body .adv .info-layout {
+  margin: 20px 0;
+}
+body .adv .info-layout p {
+  line-height: 1;
+  color: #000;
+}
+body .adv .info-layout li {
+  color: #000;
+}
+body .adv .info-layout .adv-screen {
+  width: 260px !important;
+  height: 150px !important;
+  margin: 0 0 10px;
+}
+body .adv .info-layout .adv-title {
+  margin: 7px 0 0;
   font-size: 20px;
+  color: #000;
   font-weight: bold;
   text-transform: uppercase;
 }
-body .addserver .form {
-  padding: 40px 10px;
+body .adv .info-layout .adv-subtitle {
+  margin: 15px 0 15px 10px;
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-body .addserver .form .g-recaptcha {
-  width: 290px;
+body .adv .info-layout .adv-info {
+  padding: 0 0 0 20px;
 }
-body .addserver .form .input-layout p {
+body .adv .info-layout .adv-info span {
   color: #F37021;
 }
-body .addserver .form .input-layout .alert-country,
-body .addserver .form .input-layout .alert-version {
-  visibility: hidden;
+body .adv .info-layout .adv-info .contact-info {
+  padding: 5px 0;
 }
-body .addserver .form .btn {
-  margin: 10px 0 0;
-  width: 100%;
-  text-align: center;
-  background: #09031a;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  outline: 0;
+body .adv .info-layout .adv-info .contact-info img {
+  height: 25px;
+  width: 25px;
 }
-body .addserver-description h2 {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-body .addserver-description p {
-  padding: 40px 10px;
-  margin-bottom: 5px;
-  font-weight: 700;
-}
-body .addserver-description textarea {
-  margin: 0 0 0 10px;
-  height: 114px;
-}
-body .addserver-description .logo-wrap {
-  margin: 10px 0 0;
-  text-align: center;
-}
-body .addserver-description .logo-wrap .logo-tab {
+body .adv .info-layout .adv-info .gold-server {
+  position: relative;
+  width: 240px;
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 0 10px;
+  text-decoration: none;
+  background: #F37021;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+  box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+body .adv .info-layout .adv-info .gold-server img {
+  float: left;
+  padding: 5px;
+  width: 45px;
+  height: 45px;
+}
+body .adv .info-layout .adv-info .gold-server .gold-server-des {
+  display: inline-block;
+}
+body .adv .info-layout .adv-info .gold-server .gold-server-des span {
+  color: #fff;
+}
+body .adv .info-layout .adv-info .gold-server .gold-server-des .name-server {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  margin-top: 1px;
+}
+body .adv .info-layout .adv-info .gold-server .gold-server-des .rates,
+body .adv .info-layout .adv-info .gold-server .gold-server-des .server-mod {
+  font-size: 10px;
+}
+body .adv .info-layout .adv-info .gold-server .server-data {
+  position: absolute;
+  bottom: 4px;
+  right: 6px;
+  padding: 0 2px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+body .adv .info-layout .adv-info .gold-server .server-data .data {
+  color: #F37021;
+  font-size: 10px;
+}
+body .adv .info-layout .adv-info .gold-server .server-country {
+  width: 16px;
+  height: 11px;
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  padding: 0;
+  border: none;
+}
+body .adv .info-layout .adv-info .gold-server .server-country img {
+  width: 16px;
+  height: 11px;
+}
+body .adv .info-layout .adv-info .gold-server:hover {
+  transform: translate(0px, -5px);
+  box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 0.2);
+}
+body .adv .info-layout .adv-info .gold-server:hover .gold-server-des .name-server {
+  text-decoration: underline;
+}
+body .adv .info-layout .adv-info .none-server-item {
+  margin: 10px 0;
+}
+body .adv .info-layout .adv-info .none-server-item a {
+  display: inline-block;
+  width: 194px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+body .adv .info-layout .adv-info .none-server-item span {
+  font-size: 12px;
+  color: #000;
+}
+body .adv .info-layout .adv-info .none-server-item .rates {
+  display: inline-block;
+  width: 45px;
+}
+body .adv .info-layout .adv-info .none-server-item .server-mod {
+  display: inline-block;
+  width: 60px;
+}
+body .adv .info-layout .adv-info .none-server-item .data {
+  display: inline-block;
+  width: 65px;
+}
+body .adv .info-layout .adv-info .none-server-item .country {
+  width: 16px;
+  height: 11px;
+}
+body .adv .info-layout .adv-info .none-server-item .country img {
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+}
+body .adv .info-layout .adv-info .none-server-item .gold-vip {
+  color: #F37021;
+  font-weight: bold;
+}
+body .adv .info-layout .adv-info .none-server-item .gold-vip::before {
+  padding: 4px;
+  margin: 0 2px 0 0;
+  content: 'vip';
+  background-color: #F37021;
+  color: #fff;
+}
+body .adv .info-layout .adv-info .none-server-item .silver-vip {
+  color: #2d72d9;
+  font-weight: bold;
+}
+body .adv .info-layout .adv-info .none-server-item .silver-vip::before {
+  padding: 4px;
+  margin: 0 2px 0 0;
+  content: 'vip';
+  background-color: #2d72d9;
+  color: #fff;
+}
+body .adv .info-layout .adv-info .none-server-item .takoi-vip {
+  text-transform: lowercase;
+  color: grey;
+}
+body .adv .info-layout .adv-info .none-server-item .none-server-item-description,
+body .adv .info-layout .adv-info .none-server-item .none-server-item-description-data {
+  float: right;
+  width: 33,3%;
+}
+body .adv .info-layout .adv-info .none-server-item .none-server-item-description span,
+body .adv .info-layout .adv-info .none-server-item .none-server-item-description-data span {
+  font-size: 12px;
 }
 body footer {
   background: #000;
@@ -219,6 +353,12 @@ body footer .lower-footer {
   }
 }
 @media screen and (min-width: 992px) {
+  body .content .filters .filter-server {
+    display: block;
+  }
+  body .content .filters {
+    padding: 0;
+  }
   body .nav-container .navigation .logo {
     top: 13px;
   }
@@ -234,19 +374,6 @@ body footer .lower-footer {
     padding: 0 10px;
   }
 }
-@media screen and (min-width: 1200px) {
-  body .content .filters .filter-server {
-    display: block;
-  }
-  body .content .filters {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 1200px) {
-  body .content .filters .filter-server .filter-banner img {
-    width: 200px;
-  }
-}
 @media screen and (max-width: 500px) {
   body .content .gold-servers .gold-server {
     display: inline-block;
@@ -259,6 +386,9 @@ body footer .lower-footer {
   }
   body .content h1 {
     margin-top: 0;
+  }
+  body .content .filters .filter-server .filter-banner img {
+    width: 200px;
   }
   body .content .filters {
     float: none;

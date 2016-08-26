@@ -59,6 +59,7 @@ body .nav-container .navigation .btn {
   outline: 0;
   font-size: 22px;
   font-weight: bold;
+  box-shadow: none;
 }
 body .nav-container .navigation .btn .humb {
   display: inline-block;
@@ -188,6 +189,8 @@ body .content .gold-servers .gold-server .gold-server-des span {
 body .content .gold-servers .gold-server .gold-server-des .name-server {
   display: block;
   color: #fff;
+  font-size: 13px;
+  margin-top: 1px;
 }
 body .content .gold-servers .gold-server .gold-server-des .rates,
 body .content .gold-servers .gold-server .gold-server-des .server-mod {
@@ -310,8 +313,8 @@ body .content .none-servers .today .none-server-item a,
 body .content .none-servers .tomorrow .none-server-item a,
 body .content .none-servers .will-open .none-server-item a {
   display: inline-block;
-  width: 168px;
-  font-size: 13px;
+  width: 194px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 body .content .none-servers .already-opened .none-server-item span,
@@ -332,14 +335,14 @@ body .content .none-servers .today .none-server-item .server-mod,
 body .content .none-servers .tomorrow .none-server-item .server-mod,
 body .content .none-servers .will-open .none-server-item .server-mod {
   display: inline-block;
-  width: 60px;
+  width: 59px;
 }
 body .content .none-servers .already-opened .none-server-item .data,
 body .content .none-servers .today .none-server-item .data,
 body .content .none-servers .tomorrow .none-server-item .data,
 body .content .none-servers .will-open .none-server-item .data {
   display: inline-block;
-  width: 90px;
+  width: 65px;
 }
 body .content .none-servers .already-opened .none-server-item .country,
 body .content .none-servers .today .none-server-item .country,
@@ -361,12 +364,13 @@ body .content .none-servers .today .none-server-item .gold-vip,
 body .content .none-servers .tomorrow .none-server-item .gold-vip,
 body .content .none-servers .will-open .none-server-item .gold-vip {
   color: #F37021;
+  font-weight: bold;
 }
 body .content .none-servers .already-opened .none-server-item .gold-vip::before,
 body .content .none-servers .today .none-server-item .gold-vip::before,
 body .content .none-servers .tomorrow .none-server-item .gold-vip::before,
 body .content .none-servers .will-open .none-server-item .gold-vip::before {
-  padding: 2px;
+  padding: 4px;
   margin: 0 2px 0 0;
   content: 'vip';
   background-color: #F37021;
@@ -377,12 +381,13 @@ body .content .none-servers .today .none-server-item .silver-vip,
 body .content .none-servers .tomorrow .none-server-item .silver-vip,
 body .content .none-servers .will-open .none-server-item .silver-vip {
   color: #2d72d9;
+  font-weight: bold;
 }
 body .content .none-servers .already-opened .none-server-item .silver-vip::before,
 body .content .none-servers .today .none-server-item .silver-vip::before,
 body .content .none-servers .tomorrow .none-server-item .silver-vip::before,
 body .content .none-servers .will-open .none-server-item .silver-vip::before {
-  padding: 2px;
+  padding: 4px;
   margin: 0 2px 0 0;
   content: 'vip';
   background-color: #2d72d9;
@@ -392,6 +397,7 @@ body .content .none-servers .already-opened .none-server-item .takoi-vip,
 body .content .none-servers .today .none-server-item .takoi-vip,
 body .content .none-servers .tomorrow .none-server-item .takoi-vip,
 body .content .none-servers .will-open .none-server-item .takoi-vip {
+  text-transform: lowercase;
   color: grey;
 }
 body .content .none-servers .already-opened .none-server-item .none-server-item-description,
@@ -416,7 +422,7 @@ body .content .none-servers .will-open .none-server-item .none-server-item-descr
   font-size: 12px;
 }
 body footer {
-  background: #09031a;
+  background: #000;
   color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   padding: 40px 0 0;
@@ -439,12 +445,6 @@ body footer .lower-footer {
   }
 }
 @media screen and (min-width: 992px) {
-  body .content .filters .filter-server {
-    display: block;
-  }
-  body .content .filters {
-    padding: 0;
-  }
   body .nav-container .navigation .logo {
     top: 13px;
   }
@@ -460,6 +460,19 @@ body footer .lower-footer {
     padding: 0 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  body .content .filters .filter-server {
+    display: block;
+  }
+  body .content .filters {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .content .filters .filter-server .filter-banner img {
+    width: 200px;
+  }
+}
 @media screen and (max-width: 500px) {
   body .content .gold-servers .gold-server {
     display: inline-block;
@@ -472,9 +485,6 @@ body footer .lower-footer {
   }
   body .content h1 {
     margin-top: 0;
-  }
-  body .content .filters .filter-server .filter-banner img {
-    width: 200px;
   }
   body .content .filters {
     float: none;
