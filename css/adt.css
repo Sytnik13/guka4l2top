@@ -140,60 +140,60 @@ body .nav-container .nav-tabs .nav-it-show {
 body .nav-container .nav-tabs .nav-it-show a {
   visibility: visible;
 }
-body .adv {
+body .adt {
   padding: 0 0 20px;
   box-shadow: 0 0 9px 0 #000000;
   background: #fff;
 }
-body .adv .right-side .info-layout:nth-child(1) {
+body .adt .right-side .info-layout:nth-child(1) {
   margin: 0 0 20px;
 }
-body .adv .info-layout:nth-child(1) {
+body .adt .info-layout:nth-child(1) {
   margin: 0 0 20px;
 }
-body .adv .info-layout {
+body .adt .info-layout {
   margin: 20px 0;
 }
-body .adv .info-layout p {
+body .adt .info-layout p {
   line-height: 1;
   color: #000;
 }
-body .adv .info-layout li {
+body .adt .info-layout li {
   color: #000;
 }
-body .adv .info-layout .adv-screen {
+body .adt .info-layout .adt-screen {
   width: 260px !important;
   height: 150px !important;
   margin: 0 0 10px;
 }
-body .adv .info-layout .adv-title {
+body .adt .info-layout .adt-title {
   margin: 7px 0 0;
   font-size: 20px;
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
 }
-body .adv .info-layout .adv-subtitle {
+body .adt .info-layout .adt-subtitle {
   margin: 15px 0 15px 10px;
   font-size: 15px;
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
 }
-body .adv .info-layout .adv-info {
+body .adt .info-layout .adt-info {
   padding: 0 0 0 20px;
 }
-body .adv .info-layout .adv-info span {
+body .adt .info-layout .adt-info span {
   color: #F37021;
 }
-body .adv .info-layout .adv-info .contact-info {
+body .adt .info-layout .adt-info .contact-info {
   padding: 5px 0;
 }
-body .adv .info-layout .adv-info .contact-info img {
+body .adt .info-layout .adt-info .contact-info img {
   height: 25px;
   width: 25px;
 }
-body .adv .info-layout .adv-info .gold-server {
+body .adt .info-layout .adt-info .gold-server {
   position: relative;
   width: 240px;
   display: inline-block;
@@ -205,29 +205,29 @@ body .adv .info-layout .adv-info .gold-server {
   box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
   cursor: pointer;
 }
-body .adv .info-layout .adv-info .gold-server img {
+body .adt .info-layout .adt-info .gold-server img {
   float: left;
   padding: 5px;
   width: 45px;
   height: 45px;
 }
-body .adv .info-layout .adv-info .gold-server .gold-server-des {
+body .adt .info-layout .adt-info .gold-server .gold-server-des {
   display: inline-block;
 }
-body .adv .info-layout .adv-info .gold-server .gold-server-des span {
+body .adt .info-layout .adt-info .gold-server .gold-server-des span {
   color: #fff;
 }
-body .adv .info-layout .adv-info .gold-server .gold-server-des .name-server {
+body .adt .info-layout .adt-info .gold-server .gold-server-des .name-server {
   display: block;
   color: #fff;
   font-size: 13px;
   margin-top: 1px;
 }
-body .adv .info-layout .adv-info .gold-server .gold-server-des .rates,
-body .adv .info-layout .adv-info .gold-server .gold-server-des .server-mod {
+body .adt .info-layout .adt-info .gold-server .gold-server-des .rates,
+body .adt .info-layout .adt-info .gold-server .gold-server-des .server-mod {
   font-size: 10px;
 }
-body .adv .info-layout .adv-info .gold-server .server-data {
+body .adt .info-layout .adt-info .gold-server .server-data {
   position: absolute;
   bottom: 4px;
   right: 6px;
@@ -235,11 +235,11 @@ body .adv .info-layout .adv-info .gold-server .server-data {
   background-color: #fff;
   border-radius: 2px;
 }
-body .adv .info-layout .adv-info .gold-server .server-data .data {
+body .adt .info-layout .adt-info .gold-server .server-data .data {
   color: #F37021;
   font-size: 10px;
 }
-body .adv .info-layout .adv-info .gold-server .server-country {
+body .adt .info-layout .adt-info .gold-server .server-country {
   width: 16px;
   height: 11px;
   position: absolute;
@@ -248,85 +248,85 @@ body .adv .info-layout .adv-info .gold-server .server-country {
   padding: 0;
   border: none;
 }
-body .adv .info-layout .adv-info .gold-server .server-country img {
+body .adt .info-layout .adt-info .gold-server .server-country img {
   width: 16px;
   height: 11px;
 }
-body .adv .info-layout .adv-info .gold-server:hover {
+body .adt .info-layout .adt-info .gold-server:hover {
   transform: translate(0px, -5px);
   box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 0.2);
 }
-body .adv .info-layout .adv-info .gold-server:hover .gold-server-des .name-server {
+body .adt .info-layout .adt-info .gold-server:hover .gold-server-des .name-server {
   text-decoration: underline;
 }
-body .adv .info-layout .adv-info .none-server-item {
+body .adt .info-layout .adt-info .none-server-item {
   margin: 10px 0;
 }
-body .adv .info-layout .adv-info .none-server-item a {
+body .adt .info-layout .adt-info .none-server-item a {
   display: inline-block;
   width: 194px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
 }
-body .adv .info-layout .adv-info .none-server-item span {
+body .adt .info-layout .adt-info .none-server-item span {
   font-size: 12px;
   color: #000;
 }
-body .adv .info-layout .adv-info .none-server-item .rates {
+body .adt .info-layout .adt-info .none-server-item .rates {
   display: inline-block;
   width: 45px;
 }
-body .adv .info-layout .adv-info .none-server-item .server-mod {
+body .adt .info-layout .adt-info .none-server-item .server-mod {
   display: inline-block;
   width: 60px;
 }
-body .adv .info-layout .adv-info .none-server-item .data {
+body .adt .info-layout .adt-info .none-server-item .data {
   display: inline-block;
   width: 65px;
 }
-body .adv .info-layout .adv-info .none-server-item .country {
+body .adt .info-layout .adt-info .none-server-item .country {
   width: 16px;
   height: 11px;
 }
-body .adv .info-layout .adv-info .none-server-item .country img {
+body .adt .info-layout .adt-info .none-server-item .country img {
   display: inline-block;
   width: 16px;
   height: 11px;
 }
-body .adv .info-layout .adv-info .none-server-item .gold-vip {
+body .adt .info-layout .adt-info .none-server-item .gold-vip {
   color: #F37021;
   font-weight: bold;
 }
-body .adv .info-layout .adv-info .none-server-item .gold-vip::before {
+body .adt .info-layout .adt-info .none-server-item .gold-vip::before {
   padding: 4px;
   margin: 0 2px 0 0;
   content: 'vip';
   background-color: #F37021;
   color: #fff;
 }
-body .adv .info-layout .adv-info .none-server-item .silver-vip {
+body .adt .info-layout .adt-info .none-server-item .silver-vip {
   color: #2d72d9;
   font-weight: bold;
 }
-body .adv .info-layout .adv-info .none-server-item .silver-vip::before {
+body .adt .info-layout .adt-info .none-server-item .silver-vip::before {
   padding: 4px;
   margin: 0 2px 0 0;
   content: 'vip';
   background-color: #2d72d9;
   color: #fff;
 }
-body .adv .info-layout .adv-info .none-server-item .takoi-vip {
+body .adt .info-layout .adt-info .none-server-item .takoi-vip {
   text-transform: lowercase;
   color: grey;
 }
-body .adv .info-layout .adv-info .none-server-item .none-server-item-description,
-body .adv .info-layout .adv-info .none-server-item .none-server-item-description-data {
+body .adt .info-layout .adt-info .none-server-item .none-server-item-description,
+body .adt .info-layout .adt-info .none-server-item .none-server-item-description-data {
   float: right;
   width: 33,3%;
 }
-body .adv .info-layout .adv-info .none-server-item .none-server-item-description span,
-body .adv .info-layout .adv-info .none-server-item .none-server-item-description-data span {
+body .adt .info-layout .adt-info .none-server-item .none-server-item-description span,
+body .adt .info-layout .adt-info .none-server-item .none-server-item-description-data span {
   font-size: 12px;
 }
 body footer {
